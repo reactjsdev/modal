@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ClickOutsideModule } from 'ng4-click-outside';
 
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { UserComponent } from './user/user.component';
   ],
   imports: [
     BrowserModule,
+    ClickOutsideModule,
     RouterModule.forRoot([
       {
         path: 'app-user', component : UserComponent

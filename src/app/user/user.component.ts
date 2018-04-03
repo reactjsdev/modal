@@ -29,4 +29,10 @@ export class UserComponent implements OnInit {
     console.log('close backdrop');
   }
 
+  onClickedOutside(e: any) {
+    if (e.target.className !== 'btn btn-info btn-lg'){
+      this.display = 'none';
+    }
+  }
+
 }
